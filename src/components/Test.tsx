@@ -12,14 +12,12 @@ export function SVGMaskEffectDemo() {
             <p>WalletX</p>
           </div>
         }
-        className="h-full w-full border border-red-500 rounded-md"
+        className="h-full w-full border rounded-md"
       >
         <img
           src={BGImage.src}
           alt="header"
-        //   width={2000}
-        //   height={2000}
-          className="h-full w-full  object-cover rounded-sm"
+          className="h-full min-w-full   object-cover rounded-sm bg-no-repeat"
         />
       </MaskContainer>
     </div>
