@@ -16,10 +16,14 @@ export default function HeroSection() {
   return (
     <section className="container mx-auto px-4 min-h-[90vh] flex items-center justify-center dark:bg-slate-900">
       <div className="max-w-4xl mx-auto text-center py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white">
-          <span className="block overflow-hidden text-left">
-            <span className=" pl-16 pr-7">Experience</span>
-            <FlipWords words={words} duration={1000} />
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white relative z-0">
+          <span className=" overflow-hidden flex gap-2 ">
+            <span className="ml-12">Experience</span>
+            <div className="relative">
+              <div className="absolute">
+                <FlipWords words={words} duration={1000} />
+              </div>
+            </div>
           </span>
           <Cover>On-Chain Transactions</Cover>
         </h1>
@@ -31,7 +35,7 @@ export default function HeroSection() {
 
         <Button
           size="lg"
-          className="bg-primary text-white mb-12 md:mb-16 hover:bg-primary/90 dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white transition-colors px-8 py-6 text-lg"
+          className="bg-primary text-white mb-12 md:mb-16 hover:bg-primary/90 dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white transition-colors px-8 py-6 text-lg relative z-20"
         >
           <ArrowDownToLine className="mr-3 h-5 w-5 md:h-6 md:w-6" />
           Download Now on Chrome Store
