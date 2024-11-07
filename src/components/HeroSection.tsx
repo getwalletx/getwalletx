@@ -1,8 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
 import { ArrowDownToLine, Star } from "lucide-react";
 import { FlipWords } from "./ui/flip-words";
 import UsersReview from "./UsersReview";
 import { Cover } from "./ui/cover";
+import Link from "next/link";
+import Image from "next/image";
+import PeerList from "../assets/PeerListProductOfTheWeek.png";
+import GG20 from "../assets/GitcoinGrants20.png";
+import ETHOnline23 from "../assets/ETHOnline2023Winner.png";
 
 export default function HeroSection() {
   const words = ["Simple", "Gasless", "Secure", "Gasless", "Fast", "Gasless"];
@@ -12,7 +18,7 @@ export default function HeroSection() {
       <div className="max-w-4xl mx-auto text-center py-16 md:py-24">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white">
           <span className="block overflow-hidden text-left">
-            <span className=" pl-24 pr-7">Experience</span>
+            <span className=" pl-16 pr-7">Experience</span>
             <FlipWords words={words} duration={1000} />
           </span>
           <Cover>On-Chain Transactions</Cover>
@@ -51,7 +57,37 @@ export default function HeroSection() {
               transactions!
             </p>
           </div>
-          <div>right</div>
+
+          <div className=" flex flex-col ">
+            <div className=" flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+              <Link href={"https://peerlist.io/cryptorohittt/project/walletx"}>
+                <Image
+                  src={PeerList.src}
+                  alt="ETHOnline23"
+                  width={150}
+                  height={150}
+                />
+              </Link>
+              <Link href={"https://ethglobal.com/showcase/walletx-q8oxg"}>
+                <Image
+                  src={ETHOnline23.src}
+                  alt="ETHOnline23"
+                  width={150}
+                  height={150}
+                />
+              </Link>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+              <Link href={"https://explorer.gitcoin.co/#/round/42161/610/28"}>
+                <Image
+                  src={GG20.src}
+                  alt="GitcoinGrants20"
+                  width={150}
+                  height={150}
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
