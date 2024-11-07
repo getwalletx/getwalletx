@@ -12,6 +12,7 @@ import { StaticImageData } from "next/image";
 
 type DisclosureCardProps = {
   title: string;
+  subtitle: string;
   description: string;
   cta: string;
   link: string;
@@ -21,6 +22,7 @@ type DisclosureCardProps = {
 const DisclosureCard = ({
   image,
   title,
+  subtitle,
   description,
   cta,
   link,
@@ -74,7 +76,7 @@ const DisclosureCard = ({
         </DisclosureTrigger>
         <DisclosureContent>
           <div className="flex flex-col pb-4 text-[13px] text-zinc-300 dark:text-zinc-700">
-            <p>How beautiful the mountain is 🗻</p>
+            <p className="font-semibold mb-1">{subtitle}</p>
             <p className="line-clamp-3">{description}</p>
             <button
               onClick={() => window.open(link, "_blank")}

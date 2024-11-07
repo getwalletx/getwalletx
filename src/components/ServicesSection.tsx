@@ -5,6 +5,7 @@ import DisclosureCard from "./DisclosureCard";
 type ServiceData = {
   icon: LucideIcon;
   title: string;
+  subtitle: string;
   description: string;
   cta: string;
   link: string;
@@ -14,40 +15,44 @@ type ServiceData = {
 const services: ServiceData[] = [
   {
     icon: ArrowDownToLine,
-    title: "WalletX Extension",
+    title: "WalletX Browser Extension",
+    subtitle: "Our Flagship Product 🏁",
     description:
-      "Simplify your Web3 transactions by downloading WalletX. Once installed, you can instantly enjoy gasless blockchain interactions—no additional setup needed!",
-    cta: "Download Now",
-    link: "https://getwalletx.com",
+      "Thoughtfully designed for the next generation of web3 users. Also available as Telegram Mini App & on Mobile Browser.",
+    cta: "Download WalletX",
+    link: "https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh",
   },
   {
     icon: Code,
-    title: "WalletX SDK - Coming Soon!",
+    title: "WalletX SDK",
+    subtitle: "The Invisible Wallet ⛰",
     description:
-      "Enable gasless transactions within your decentralized application or Web3 wallet with the upcoming WalletX SDK. Users watch a short ad to cover gas fees, keeping transactions free.",
-    cta: "Join the Waitlist",
+      "Allowing DApps to provide their users with state-of-the-art invisible wallet solution under the hood. Few.",
+    cta: "Building a DApp? Apply now",
     link: "https://waitlister.me/p/walletx",
   },
   {
     icon: PieChart,
-    title: "Advertiser Dashboard",
+    title: "Native Web3 AdTech Solution",
+    subtitle: "Reach Millions of Onchain Users 💻",
     description:
-      "Reach Web3 users with WalletX's ad network. The advertiser dashboard enables targeted promotions by allowing gas sponsorship in exchange for ad engagement.",
-    cta: "Contact Us",
-    link: "https://getwalletx.com",
+      "First-of-its-kind advertisement solution for web3 companies to reach onchain users where they truly are.",
+    cta: "Watch Demo",
+    link: "https://www.youtube.com/watch?v=hYZWZlkx7ds",
   },
 ];
 
 export function ServicesSection() {
   return (
     <section id="services" className="container mx-auto px-4 py-20">
-      <h2 className="text-3xl font-bold mb-12 text-center">Our Products</h2>
+      <h2 className="text-3xl font-bold mb-12 text-center"><i className="text-base font-normal">Get to know all</i> <br/>Our Products</h2>
       <div className="flex gap-10 justify-center items-center flex-col md:flex-row row-span-2 ">
         {services.map((service, index) => (
           <DisclosureCard
             key={index}
             image={testImg}
             title={service.title}
+            subtitle={service.subtitle}
             description={service.description}
             cta={service.cta}
             link={service.link}

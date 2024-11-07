@@ -148,9 +148,9 @@ export const Lid = ({
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <span className="text-white">
+          {/* <span className="text-white">
             <AceternityLogo />
-          </span>
+          </span> */}
         </div>
       </div>
       <motion.div
@@ -169,7 +169,7 @@ export const Lid = ({
           src={src as string}
           alt="aceternity logo"
           fill
-          className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
+          className="object-scale-down object-center absolute rounded-lg inset-0 h-full w-full bg-black"
         />
       </motion.div>
     </div>
