@@ -80,21 +80,39 @@ const walletXFeatures = [
 ];
 
 export default function CoreFeatures() {
+  const midIndex = Math.ceil(walletXFeatures.length / 2);
+  const firstHalf = walletXFeatures.slice(0, midIndex);
+  const secondHalf = walletXFeatures.slice(midIndex);
+
   return (
     <div className="w-full py-8">
       <h2 className="text-3xl font-bold mb-12 text-center">Core Features</h2>
-      <InfiniteSlider gap={24} duration={100} durationOnHover={500}>
-        {walletXFeatures.map((feature, index) => (
-          <div
-            key={index}
-            className="w-[280px] flex flex-col gap-3 bg-white/5 p-4 rounded-lg"
-          >
-            <div className="aspect-square w-full rounded-lg bg-gray-700" />
-            <h3 className="text-lg font-semibold">{feature.title}</h3>
-            <p className="text-sm text-gray-400">{feature.description}</p>
-          </div>
-        ))}
-      </InfiniteSlider>
+      <div className="flex flex-col gap-10">
+        <InfiniteSlider gap={24} duration={100} durationOnHover={5000}>
+          {firstHalf.map((feature, index) => (
+            <div
+              key={index}
+              className="w-[280px] flex flex-col gap-3 bg-white/5 p-4 rounded-lg"
+            >
+              <div className="aspect-square w-full rounded-lg bg-gray-700" />
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+              <p className="text-sm text-gray-400">{feature.description}</p>
+            </div>
+          ))}
+        </InfiniteSlider>
+        <InfiniteSlider gap={24} duration={100} durationOnHover={5000} reverse>
+          {secondHalf.map((feature, index) => (
+            <div
+              key={index}
+              className="w-[280px] flex flex-col gap-3 bg-white/5 p-4 rounded-lg"
+            >
+              <div className="aspect-square w-full rounded-lg bg-gray-700" />
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+              <p className="text-sm text-gray-400">{feature.description}</p>
+            </div>
+          ))}
+        </InfiniteSlider>
+      </div>
     </div>
   );
 }
