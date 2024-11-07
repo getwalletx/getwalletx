@@ -55,7 +55,10 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <div className="w-full bg-white px-5 py-16 md:py-24 text-gray-800 dark:bg-slate-900">
+    <div
+      id="testimonial"
+      className="w-full bg-white px-5 py-16 md:py-24 text-gray-800 dark:bg-slate-900"
+    >
       <div className="w-full max-w-6xl mx-auto">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white">

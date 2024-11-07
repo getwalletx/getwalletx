@@ -63,7 +63,7 @@ const CoreFeatures = () => {
   ];
 
   return (
-    <div className="w-full py-8 dark:bg-black">
+    <div id="features" className="w-full py-8 dark:bg-black">
       <h2 className="text-3xl font-bold mb-12 text-center">Core Features</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
