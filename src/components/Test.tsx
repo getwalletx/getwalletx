@@ -1,17 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import MaskContainer from "@/components/ui/svg-mask-effect";
 import BGImage from "../assets/WebsiteBackgroundHeroSection.svg";
-import Image from "next/image";
-import HeroSection from "./HeroSection";
+import { CTASection } from "./CTASection";
 
 export function SVGMaskEffectDemo() {
   return (
-    <div className="h-full min-h-[100vh] w-full flex items-center justify-center  overflow-hidden">
+    <div className="h-full  w-full flex items-center justify-center  overflow-hidden">
       <MaskContainer
-        revealText={
-          <HeroSection />
-        }
-        className="h-full w-full border rounded-md "
+        revealText={<CTASection />}
+        className="h-full w-full bg-gradient-to-b from-gray-50 to-gray-100  "
       >
         <img
           src={BGImage.src}

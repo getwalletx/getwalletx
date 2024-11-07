@@ -137,7 +137,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400 pb-10 md:pb-0 ">
+        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400 pb-10 md:pb0 ">
           © 2023 WalletX. All rights reserved.
         </div>
       </div>

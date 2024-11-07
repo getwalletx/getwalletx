@@ -40,7 +40,10 @@ const services: ServiceData[] = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="container mx-auto px-4 py-20">
+    <section
+      id="services"
+      className=" bg-gray-100  mx-auto px-4 py-20 w-screen"
+    >
       <h2 className="text-3xl font-bold mb-12 text-center">Our Products</h2>
       <div className="flex gap-10 justify-center items-center flex-col md:flex-row row-span-2 ">
         {services.map((service, index) => (

@@ -7,7 +7,6 @@ import { ComparisonSection } from "@/components/ComparisonSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import { TeamSection } from "@/components/TeamSection";
 import { FAQSection } from "@/components/FAQSection";
-import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import CoreFeatures from "@/components/CoreFeatures";
 import { MacbookScrollDemo } from "@/components/MacbookScrollDemo";
@@ -17,7 +16,8 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 dark:text-white transition-colors duration-200 overflow-x-hidden">
       <main>
-        <SVGMaskEffectDemo />
+        <HeroSection />
+
         <MacbookScrollDemo />
         <GetStartedSection />
         <CoreFeatures />
@@ -26,7 +26,7 @@ export default function LandingPage() {
         <TestimonialsSection />
         <TeamSection />
         <FAQSection />
-        <CTASection />
+        <SVGMaskEffectDemo />
       </main>
       <Footer />
     </div>

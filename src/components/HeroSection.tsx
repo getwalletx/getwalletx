@@ -14,7 +14,7 @@ export default function HeroSection() {
   const words = ["Simple", "Gasless", "Secure", "Gasless", "Fast", "Gasless"];
 
   return (
-    <section className="container mx-auto px-4 min-h-[90vh] flex items-center justify-center dark:bg-slate-900">
+    <section className=" bg-gradient-to-b from-gray-50 to-gray-100  mx-auto px-4 min-h-[90vh] flex items-center justify-center dark:bg-slate-900">
       <div className="max-w-4xl mx-auto text-center py-16 md:py-24">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white relative z-0">
           <span className=" overflow-hidden flex gap-2 ">
