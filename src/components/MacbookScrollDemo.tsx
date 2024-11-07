@@ -1,6 +1,7 @@
 import React from "react";
 import { MacbookScroll } from "../components/ui/macbook-scroll";
 import Link from "next/link";
+import inMac from "../assets/inMac.svg";
 
 export function MacbookScrollDemo() {
   return (
@@ -8,7 +9,7 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span>
-            This is how WalletX works without gas fees. <br /> No kidding.
+            Coming up... Your 1st Crypto Wallet Extension. <br /><i className="text-base font-normal">(or maybe the last one)</i>
           </span>
         }
         badge={
@@ -16,7 +17,7 @@ export function MacbookScrollDemo() {
             <Badge className="h-10 w-10 transform -rotate-12" />
           </Link>
         }
-        src={`https://ui.aceternity.com/_next/image?url=%2Flinear.webp&w=2048&q=75`}
+        src={inMac}
         showGradient={false}
       />
     </div>

@@ -16,30 +16,30 @@ export function GetStartedSection() {
             <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </span>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-            Get Started with WalletX
+            Let's Get Started?
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg text-center max-w-2xl">
-            Choose your path and start your journey with WalletX - whether
-            you&apos;re new to Web3 or a seasoned developer
+            Choose your path and start your crypto journey with WalletX
           </p>
         </div>
 
         <Tabs defaultValue="newbie" className="w-full max-w-5xl mx-auto">
-          <TabsList className="flex w-full max-w-md mx-auto mb-12 p-1 bg-gray-200 dark:bg-gray-700/50 rounded-full">
+          <TabsList className="flex w-full max-w-md mx-auto mb-12 py-6 px-2 bg-gray-200 dark:bg-gray-700/50 rounded-full">
             <TabsTrigger
               value="newbie"
-              className="w-1/2 rounded-full px-8 py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
+              className="w-1/2 rounded-full px-8 py-2 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
             >
               <Sparkles className="w-4 h-4" />
-              <span>Newbie</span>
+              <span>I'm New to Crypto</span>
             </TabsTrigger>
             <TabsTrigger
               value="degen"
-              className="w-1/2 rounded-full px-8 py-3 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
+              className="w-1/2 rounded-full px-8 py-2 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
             >
               <Code className="w-4 h-4" />
-              <span>Degen</span>
+              <span>I'm a Crypto Degen</span>
             </TabsTrigger>
+            
           </TabsList>
 
           <TabsContent value="newbie">
@@ -48,19 +48,19 @@ export function GetStartedSection() {
                 {
                   title: "Install Extension",
                   description:
-                    "Download and install the WalletX Chrome extension to get started.",
+                    "Download and install the WalletX chrome extension from below.",
                   image: "chrome-store",
                 },
                 {
-                  title: "Connect Wallet",
+                  title: "Create Your Wallet",
                   description:
-                    "Link your existing Web3 wallet to WalletX for seamless integration.",
+                    "Open the extension and create a new wallet with just one click.",
                   image: "wallet-connect",
                 },
                 {
-                  title: "Enjoy Gasless Transactions",
+                  title: "Backup Your Wallet",
                   description:
-                    "Start making transactions without worrying about gas fees!",
+                    "Save your wallet's seed phrase from settings and keep it safe.",
                   image: "transactions",
                 },
               ].map((item, index) => (
@@ -99,21 +99,21 @@ export function GetStartedSection() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Integrate SDK",
+                  title: "Install Extension",
                   description:
-                    "Implement WalletX SDK into your dApp for gasless transactions.",
-                  image: "sdk",
+                    "Download and install the WalletX chrome extension from below.",
+                  image: "chrome-store",
                 },
                 {
-                  title: "Configure Ad Settings",
+                  title: "Import Your Old Wallet",
                   description:
-                    "Set up your preferred ad display options for gas fee coverage.",
+                    "Import your old wallet's seed phrase and setup your new gasless wallet.",
                   image: "settings",
                 },
                 {
-                  title: "Monitor Analytics",
+                  title: "Happy Degen-ing",
                   description:
-                    "Track user engagement and transaction metrics in real-time.",
+                    "Enjoy gasless experience across 30+ EVM chains in the cryptoverse.",
                   image: "analytics",
                 },
               ].map((item, index) => (
