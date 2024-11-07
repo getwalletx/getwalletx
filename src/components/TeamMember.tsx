@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function TeamMember({
   name,
   role,
@@ -9,7 +11,7 @@ export function TeamMember({
 }) {
   return (
     <div className="text-center">
-      <img
+      <Image
         src={image}
         alt={name}
         className="w-32 h-32 rounded-full mx-auto mb-4"

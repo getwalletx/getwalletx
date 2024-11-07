@@ -32,11 +32,8 @@ async function getMediumArticles(username: string) {
   return data.items;
 }
 
-export default async function Page({
-  username = "getwalletx",
-}: {
-  username?: string;
-}) {
+const Blogs = async () => {
+  const username = "getwalletx";
   let articles;
   try {
     articles = await getMediumArticles(username);
@@ -100,4 +97,6 @@ export default async function Page({
       </div>
     </div>
   );
-}
+};
+
+export default Blogs;
