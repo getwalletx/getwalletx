@@ -26,7 +26,7 @@ const services: ServiceData[] = [
     description:
       "Enable gasless transactions within your decentralized application or Web3 wallet with the upcoming WalletX SDK. Users watch a short ad to cover gas fees, keeping transactions free.",
     cta: "Join the Waitlist",
-    link: "https://getwalletx.com",
+    link: "https://waitlister.me/p/walletx",
   },
   {
     icon: PieChart,
