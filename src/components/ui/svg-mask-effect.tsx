@@ -8,7 +8,7 @@ const MaskContainer = ({
   children,
   revealText,
   size = 10,
-  revealSize = 600,
+  revealSize = 500,
   className,
 }: {
   children?: string | React.ReactNode;
@@ -42,13 +42,13 @@ const MaskContainer = ({
   return (
     <motion.div
       ref={containerRef}
-      className={cn("h-screen relative w-full", className)}
+      className={cn("h-screen relative w-full z-10", className)}
       animate={{
         backgroundColor: isHovered ? "var(--slate-900)" : "var(--white)",
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
+        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat] z-10"
         animate={{
           maskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
@@ -73,7 +73,7 @@ const MaskContainer = ({
         </div>
       </motion.div>
 
-      <div className="w-full h-full flex items-center justify-center  text-white">
+      <div className="w-full h-full flex items-center justify-center  ">
         {revealText}
       </div>
     </motion.div>

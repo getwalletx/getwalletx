@@ -1,23 +1,22 @@
 "use client";
 import MaskContainer from "@/components/ui/svg-mask-effect";
-import BGImage from "../assets/Website Background Hero Section.svg";
+import BGImage from "../assets/WebsiteBackgroundHeroSection.svg";
 import Image from "next/image";
+import HeroSection from "./HeroSection";
 
 export function SVGMaskEffectDemo() {
   return (
-    <div className="h-full w-full flex items-center justify-center  overflow-hidden">
+    <div className="h-full min-h-[100vh] w-full flex items-center justify-center  overflow-hidden">
       <MaskContainer
         revealText={
-          <div className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold h-screen  w-screen">
-            <p>WalletX</p>
-          </div>
+          <HeroSection />
         }
-        className="h-full w-full border rounded-md"
+        className="h-full w-full border rounded-md "
       >
         <img
           src={BGImage.src}
           alt="header"
-          className="h-full min-w-full   object-cover rounded-sm bg-no-repeat"
+          className="h-full min-w-full   object-cover rounded-sm bg-no-repeat z-10"
         />
       </MaskContainer>
     </div>
