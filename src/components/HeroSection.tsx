@@ -41,7 +41,7 @@ export default function HeroSection() {
           Download Now on Chrome Store
         </Button>
 
-        <div className="flex  items-center gap-10 justify-between md:flex-row ">
+        <div className="flex flex-col-reverse  items-center gap-10 justify-between sm:flex-row  ">
           <div className="flex flex-col items-center space-y-6">
             <div className="flex  gap-7 items-center  justify-center">
               <UsersReview />
@@ -63,7 +63,7 @@ export default function HeroSection() {
           </div>
 
           <div className=" flex flex-col ">
-            <div className=" flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+            <div className=" flex items-center justify-center gap-4 md:flex-row md:gap-8">
               <Link href={"https://peerlist.io/cryptorohittt/project/walletx"}>
                 <Image
                   src={PeerList.src}
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 />
               </Link>
             </div>
-            <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
+            <div className="flex items-center justify-center gap-4 md:flex-row md:gap-8">
               <Link href={"https://explorer.gitcoin.co/#/round/42161/610/28"}>
                 <Image
                   src={GG20.src}
