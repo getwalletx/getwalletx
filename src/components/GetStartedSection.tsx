@@ -16,7 +16,7 @@ export function GetStartedSection() {
             <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </span>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-            Let's Get Started?
+            Let&apos;s get started
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg text-center max-w-2xl">
             Choose your path and start your crypto journey with WalletX
@@ -30,16 +30,15 @@ export function GetStartedSection() {
               className="w-1/2 rounded-full px-8 py-2 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
             >
               <Sparkles className="w-4 h-4" />
-              <span>I'm New to Crypto</span>
+              <span>I&apos;m New to Crypto</span>
             </TabsTrigger>
             <TabsTrigger
               value="degen"
               className="w-1/2 rounded-full px-8 py-2 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-800 data-[state=active]:shadow-sm transition-all duration-200 flex items-center justify-center gap-2"
             >
               <Code className="w-4 h-4" />
-              <span>I'm a Crypto Degen</span>
+              <span>I&apos;m a Crypto Degen</span>
             </TabsTrigger>
-            
           </TabsList>
 
           <TabsContent value="newbie">
