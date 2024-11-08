@@ -46,7 +46,7 @@ const accordionData = [
 
 export function FAQSection() {
   return (
-    <section id="faq" className="container mx-auto px-4 py-20">
+    <section id="faq" className="container mx-auto px-4 py-20 max-w-[1000px]">
       <h2 className="text-3xl font-bold mb-12 text-center">
         Frequently Asked Questions
       </h2>

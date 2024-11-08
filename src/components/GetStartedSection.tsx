@@ -1,7 +1,12 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Rocket, Code, Sparkles } from "lucide-react";
+import { Code, Sparkles } from "lucide-react";
+// import { Rocket, Code, Sparkles } from "lucide-react";
+import ChromeStore from "../assets/getStarted/chromeExtensionImg.svg";
+import CreateYourWallet from "../assets/getStarted/createYourWallet.svg";
+import BackupYourWallet from "../assets/getStarted/backupYourWallet.svg";
+
 import Image from "next/image";
 
 export function GetStartedSection() {
@@ -12,7 +17,7 @@ export function GetStartedSection() {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center mb-16">
-          <span className="inline-block p-2 bg-blue-100 dark:bg-blue-900 rounded-lg mb-4">
+          {/* <span className="inline-block p-2 bg-blue-100 dark:bg-blue-900 rounded-lg mb-4">
             <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </span>
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
@@ -20,7 +25,15 @@ export function GetStartedSection() {
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg text-center max-w-2xl">
             Choose your path and start your crypto journey with WalletX
-          </p>
+          </p> */}
+
+          <h2 className="text-3xl font-bold mb-12 text-center">
+            <i className="text-base font-normal">
+              Choose your path and start your crypto journey with WalletX
+            </i>
+            <br />
+            Let&apos;s get started
+          </h2>
         </div>
 
         <Tabs defaultValue="newbie" className="w-full max-w-5xl mx-auto">
@@ -42,25 +55,25 @@ export function GetStartedSection() {
           </TabsList>
 
           <TabsContent value="newbie">
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8 sm:max-w-[50%] lg:max-w-full mx-auto">
               {[
                 {
                   title: "Install Extension",
                   description:
                     "Download and install the WalletX chrome extension from below.",
-                  image: "chrome-store",
+                  image: `${ChromeStore.src}`,
                 },
                 {
                   title: "Create Your Wallet",
                   description:
                     "Open the extension and create a new wallet with just one click.",
-                  image: "wallet-connect",
+                  image: `${CreateYourWallet.src}`,
                 },
                 {
                   title: "Backup Your Wallet",
                   description:
                     "Save your wallet's seed phrase from settings and keep it safe.",
-                  image: "transactions",
+                  image: `${BackupYourWallet.src}`,
                 },
               ].map((item, index) => (
                 <Card
@@ -81,7 +94,7 @@ export function GetStartedSection() {
                     </p>
                     <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
                       <Image
-                        src={`/api/placeholder/400/225`}
+                        src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover"
                         width={400}

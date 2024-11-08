@@ -9,40 +9,39 @@ type Testimonial = {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Kenzie Edgar",
+    name: "Nil Jhonson",
     avatar: `${avatar.src}`,
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel!",
+      "No more gas fees confusion, just smooth transactions. WalletX is really helping bridge the gap for beginners.",
   },
   {
     name: "Stevie Tifft",
     avatar: `${avatar.src}`,
     testimonial:
-      "Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.",
+      "WalletX is removing one of the biggest headaches in crypto by eliminating gas fees.",
+  },
+  {
+    name: "Rifat Ahmed",
+    avatar: `${avatar.src}`,
+    testimonial:
+      "WalletX really seems to be solving a major issue for both users and developers in web3.",
   },
   {
     name: "Kenzie Edgar",
     avatar: `${avatar.src}`,
     testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel!",
-  },
-  {
-    name: "Kenzie Edgar",
-    avatar: `${avatar.src}`,
-    testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel!",
+      "It’s amazing how WalletX removes the need for native tokens in DApps. ",
   },
   {
     name: "Stevie Tifft",
     avatar: `${avatar.src}`,
     testimonial:
-      "Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.",
+      "Now, with WalletX, we can finally transact without worrying making this a big step forward for broader Web3 adoption.",
   },
   {
     name: "Kenzie Edgar",
     avatar: `${avatar.src}`,
-    testimonial:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel!",
+    testimonial: "I love that WalletX lets you do gasless transactions ",
   },
 ];
 
@@ -62,8 +61,7 @@ const TestimonialsSection = () => {
       <div className="w-full max-w-6xl mx-auto">
         <div className="text-center max-w-xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white">
-            What people <br />
-            are saying.
+            What people are saying.
           </h1>
           <h3 className="text-xl md:text-2xl mb-8 md:mb-12 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.

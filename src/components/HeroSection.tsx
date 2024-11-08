@@ -43,7 +43,7 @@ export default function HeroSection() {
 
         <div className="flex flex-col-reverse  items-center gap-10 justify-between sm:flex-row  ">
           <div className="flex flex-col items-center space-y-6">
-            <div className="flex  gap-7 items-center  justify-center">
+            <div className="flex   gap-7 items-center  justify-center">
               <UsersReview />
               <div className="flex justify-center items-center">
                 {[...Array(5)].map((_, i) => (

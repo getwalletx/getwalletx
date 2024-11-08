@@ -68,6 +68,15 @@ export function Footer() {
                   FAQ
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/1ROcyJdv1M4Uzh5_-WhBLsoWBYLrRkhoi?usp=drive_link
+"
+                  className="text-sm text-gray-400 hover:text-white"
+                >
+                  Brand Kit
+                </a>
+              </li>
             </ul>
           </div>
           <div>
