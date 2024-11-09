@@ -3,9 +3,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Code, Sparkles } from "lucide-react";
 // import { Rocket, Code, Sparkles } from "lucide-react";
-import ChromeStore from "../assets/getStarted/chromeExtensionImg.svg";
-import CreateYourWallet from "../assets/getStarted/createYourWallet.svg";
-import BackupYourWallet from "../assets/getStarted/backupYourWallet.svg";
+import CreateYourWallet from "../assets/getStarted/createUrWallet.svg";
+import BackupYourWallet from "../assets/getStarted/backupUrWallet.svg";
+import HappyDegening from "../assets/getStarted/HappyDegen-ing.svg";
+import ImportYourOldWallet from "../assets/getStarted/importUrOldWallet.svg";
+import InstallXtension from "../assets/getStarted/installExtension.svg";
 
 import Image from "next/image";
 
@@ -61,7 +63,7 @@ export function GetStartedSection() {
                   title: "Install Extension",
                   description:
                     "Download and install the WalletX chrome extension from below.",
-                  image: `${ChromeStore.src}`,
+                  image: `${InstallXtension.src}`,
                 },
                 {
                   title: "Create Your Wallet",
@@ -114,19 +116,19 @@ export function GetStartedSection() {
                   title: "Install Extension",
                   description:
                     "Download and install the WalletX chrome extension from below.",
-                  image: "chrome-store",
+                  image: `${InstallXtension.src}`,
                 },
                 {
                   title: "Import Your Old Wallet",
                   description:
                     "Import your old wallet's seed phrase and setup your new gasless wallet.",
-                  image: "settings",
+                  image: `${ImportYourOldWallet.src}`,
                 },
                 {
                   title: "Happy Degen-ing",
                   description:
                     "Enjoy gasless experience across 30+ EVM chains in the cryptoverse.",
-                  image: "analytics",
+                  image: `${HappyDegening.src}`,
                 },
               ].map((item, index) => (
                 <Card
@@ -147,7 +149,7 @@ export function GetStartedSection() {
                     </p>
                     <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-xl overflow-hidden group-hover:scale-[1.02] transition-transform duration-300">
                       <Image
-                        src={`/api/placeholder/400/225`}
+                        src={item.image}
                         alt={item.title}
                         className="w-full h-full object-cover"
                         width={400}

@@ -5,7 +5,6 @@ import { GetStartedSection } from "@/components/GetStartedSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { ComparisonSection } from "@/components/ComparisonSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import { TeamSection } from "@/components/TeamSection";
 import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import CoreFeatures from "@/components/CoreFeatures";
@@ -24,7 +23,6 @@ export default function LandingPage() {
         <ServicesSection />
         <ComparisonSection />
         <TestimonialsSection />
-        <TeamSection />
         <FAQSection />
         <SVGMaskEffectDemo />
       </main>

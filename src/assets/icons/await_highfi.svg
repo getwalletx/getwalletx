@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e8bdff;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Layer_1">
+      <path class="cls-1" d="M48.5,3h-11v5h-10v5h-4v6h-6v5h-5v49h5v25h15v-5h5v5h25v-5h5v-15h5v-5h5v-5h5v-10h5v-5h5v-10h-5v-5h-10v5h-5v5h-5V13h-5v-5h-14V3Z"/>
+      <path d="M48.5,3h-11v5h-10v5h-4v6h-6v5h6v19h5V13h7v30h5V8h8V3Z"/>
+      <path d="M62.5,13v-5h-14v35h5V13h9Z"/>
+      <path d="M72.5,48h-5V13h-5v45h5v-5h5v-5Z"/>
+      <path d="M77.5,43h-5v5h5v-5Z"/>
+      <path d="M87.5,43v-5h-10v5h10Z"/>
+      <path d="M87.5,53h5v-10h-5v10Z"/>
+      <path d="M82.5,58h5v-5h-5v5Z"/>
+      <path d="M77.5,68h5v-10h-5v10Z"/>
+      <path d="M72.5,73h5v-5h-5v5Z"/>
+      <path d="M67.5,78h5v-5h-5v5Z"/>
+      <path d="M62.5,93h5v-15h-5v15Z"/>
+      <path d="M37.5,93v5h25v-5h-25Z"/>
+      <path d="M32.5,93h5v-5h-5v5Z"/>
+      <path d="M22.5,73v20h10v5h-15v-25h-5V24h5v49h5Z"/>
+    </g>
+  </g>
+</svg>

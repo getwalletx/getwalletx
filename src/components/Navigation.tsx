@@ -1,31 +1,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import {
-  Menu,
-  X,
-  Home,
-  User,
-  Briefcase,
-  FileText,
-  // Sun,
-  // Moon,
-} from "lucide-react";
+import { Menu, X, Home, User, Briefcase, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  // const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // setIsDark(
-    //   localStorage.theme === "dark" ||
-    //     (!("theme" in localStorage) &&
-    //       window.matchMedia("(prefers-color-scheme: dark)").matches)
-    // );
-
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
@@ -35,19 +19,12 @@ const Navigation = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // const toggleDarkMode = () => {
-  //   const newDarkMode = !isDark;
-  //   setIsDark(newDarkMode);
-  //   localStorage.theme = newDarkMode ? "dark" : "light";
-  //   document.documentElement.classList.toggle("dark", newDarkMode);
-  // };
-
   const handleNavigation = (href: string) => {
-    if (href === "/blogs") {
-      // For blog page, use normal navigation
-      window.location.href = href;
+    if (href.startsWith("/")) {
+      // For absolute paths (like /blogs and /team), use window.location.href
+      window.location.href = window.location.origin + href;
     } else {
-      // For section navigation, first ensure we're on the home page
+      // For section navigation (starting with #), first ensure we're on the home page
       if (window.location.pathname !== "/") {
         window.location.href = `/${href}`;
       } else {
@@ -65,20 +42,12 @@ const Navigation = () => {
   const navigationItems = [
     { name: "Get Started", href: "#get-started", icon: Home },
     { name: "Services", href: "#services", icon: Briefcase },
-    { name: "Testimonials", href: "#testimonials", icon: User },
+    { name: "Testimonials", href: "#testimonial", icon: User },
     { name: "Blog", href: "/blogs", icon: FileText },
-    { name: "Team", href: "#team", icon: User },
+    { name: "Team", href: "/team", icon: User },
   ];
 
-  // const DarkModeButton = () => (
-  //   <button
-  //     onClick={toggleDarkMode}
-  //     className="p-2 rounded-lg text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
-  //     aria-label="Toggle dark mode"
-  //   >
-  //     {isDark ? <Sun size={20} /> : <Moon size={20} />}
-  //   </button>
-  // );
+  // Rest of your component remains the same...
 
   const DesktopNav = () => (
     <header className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-sm z-50 transition-colors duration-200">
@@ -106,9 +75,8 @@ const Navigation = () => {
         </div>
 
         <div className="w-1/4 flex justify-end items-center space-x-4">
-          {/* <DarkModeButton /> */}
           <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105">
-            Download
+            Download Extension
           </button>
         </div>
       </nav>
@@ -127,7 +95,6 @@ const Navigation = () => {
           </Link>
 
           <div className="flex items-center space-x-4">
-            {/* <DarkModeButton /> */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
