@@ -1,6 +1,10 @@
 import { ArrowDownToLine, Code, PieChart, LucideIcon } from "lucide-react";
-import testImg from "../assets/longTest.jpg";
 import DisclosureCard from "./DisclosureCard";
+import walletXExtension from "../assets/ourProducts/walletXBrowserExtension.svg";
+import walletXSDK from "../assets/ourProducts/walletXSDK.svg";
+import walletXAdSolution from "../assets/ourProducts/walletXAdSolutions.svg";
+import { StaticImageData } from "next/image";
+
 // New type for service data
 type ServiceData = {
   icon: LucideIcon;
@@ -9,6 +13,7 @@ type ServiceData = {
   description: string;
   cta: string;
   link: string;
+  image: StaticImageData;
 };
 
 // Array of services
@@ -21,6 +26,7 @@ const services: ServiceData[] = [
       "Thoughtfully designed for the next generation of web3 users. Also available as Telegram Mini App & on Mobile Browser.",
     cta: "Download WalletX",
     link: "https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh",
+    image: walletXExtension,
   },
   {
     icon: Code,
@@ -30,6 +36,7 @@ const services: ServiceData[] = [
       "Allowing DApps to provide their users with state-of-the-art invisible wallet solution under the hood. Few.",
     cta: "Building a DApp? Apply now",
     link: "https://waitlister.me/p/walletx",
+    image: walletXSDK,
   },
   {
     icon: PieChart,
@@ -39,6 +46,7 @@ const services: ServiceData[] = [
       "First-of-its-kind advertisement solution for web3 companies to reach onchain users where they truly are.",
     cta: "Watch Demo",
     link: "https://www.youtube.com/watch?v=hYZWZlkx7ds",
+    image: walletXAdSolution,
   },
 ];
 
@@ -53,7 +61,7 @@ export function ServicesSection() {
         {services.map((service, index) => (
           <DisclosureCard
             key={index}
-            image={testImg}
+            image={service.image}
             title={service.title}
             subtitle={service.subtitle}
             description={service.description}
