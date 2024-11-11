@@ -63,9 +63,11 @@ const CoreFeatures = () => {
   ];
 
   return (
-    <div className="w-full py-8 dark:bg-black">
-      <h2 className="text-3xl font-bold mb-12 text-center">
-        <i className="text-base font-normal">Know Your WalletX&apos;s</i>
+    <div className="w-full py-10 dark:bg-black">
+      <h2 className="text-3xl  sm:text-4xl font-bold mb-12 text-center">
+        <i className="text-base sm:text-lg font-normal">
+          Know Your WalletX&apos;s
+        </i>
         <br />
         Core Features
       </h2>

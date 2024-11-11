@@ -52,12 +52,13 @@ const services: ServiceData[] = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="bg-gray-100  mx-auto px-4 py-20">
-      <h2 className="text-3xl font-bold mb-12 text-center">
-        <i className="text-base font-normal">Get to know all</i> <br />
+    <section id="services" className="bg-gray-100  mx-auto px-4 py-10">
+      <h2 className="text-3xl  sm:text-4xl font-bold mb-12 text-center">
+        <i className="text-base sm:text-lg font-normal">Get to know all</i>{" "}
+        <br />
         Our Products
       </h2>
-      <div className="flex gap-10 justify-center items-center flex-col md:flex-row row-span-2 ">
+      <div className="flex gap-10 justify-center items-center flex-col md:flex-row row-span-2 mb-10 ">
         {services.map((service, index) => (
           <DisclosureCard
             key={index}

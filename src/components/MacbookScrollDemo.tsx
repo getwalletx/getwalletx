@@ -5,11 +5,14 @@ import inMac from "../assets/inMac.svg";
 
 export function MacbookScrollDemo() {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full h-full">
       <MacbookScroll
         title={
           <span>
-            Coming up... Your 1st Crypto Wallet Extension. <br /><i className="text-base font-normal">(or maybe the last one)</i>
+            Coming up... Your 1st Crypto Wallet Extension. <br />
+            <i className="text-lg sm:text-xl font-normal">
+              (or maybe the last one)
+            </i>
           </span>
         }
         badge={

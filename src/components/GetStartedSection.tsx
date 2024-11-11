@@ -15,10 +15,10 @@ export function GetStartedSection() {
   return (
     <section
       id="get-started"
-      className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-24"
+      className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-10"
     >
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center mb-16">
+      <div className=" mx-auto px-4">
+        <div className="flex flex-col items-center mb-5 md:mb-10">
           {/* <span className="inline-block p-2 bg-blue-100 dark:bg-blue-900 rounded-lg mb-4">
             <Rocket className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </span>
@@ -29,8 +29,8 @@ export function GetStartedSection() {
             Choose your path and start your crypto journey with WalletX
           </p> */}
 
-          <h2 className="text-3xl font-bold mb-12 text-center">
-            <i className="text-base font-normal">
+          <h2 className="text-3xl  sm:text-4xl  font-bold mb-5 lg:mb-12 text-center">
+            <i className="text-base sm:text-lg font-normal">
               Choose your path and start your crypto journey with WalletX
             </i>
             <br />

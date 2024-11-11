@@ -24,7 +24,7 @@ export function CTASection() {
   };
   return (
     <section className="container bg-gradient-to-b from-gray-50 to-gray-100 mx-auto px-4 pt-24 pb-56 text-center h-full w-full">
-      <h2 className="text-3xl  sm:text-6xl font-bold mb-6 ">
+      <h2 className="text-3xl  sm:text-5xl font-bold mb-6 ">
         Experience What&apos;s Under the Hood
       </h2>
       <p className="text-lg sm:text-xl mb-8 text-\ray-600 dark:text-gray-300">

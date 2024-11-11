@@ -37,7 +37,7 @@ export default function HeroSection() {
   return (
     <section className=" bg-gradient-to-b from-gray-50 to-gray-100  mx-auto px-4 min-h-[90vh] flex items-center justify-center dark:bg-slate-900">
       <div className="max-w-4xl mx-auto text-center py-16 md:py-24">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white relative z-0">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white relative z-0">
           <span className=" overflow-hidden flex gap-2 ">
             <span className="ml-12">Experience</span>
             <div className="relative">
@@ -49,7 +49,7 @@ export default function HeroSection() {
           <Cover>On-Chain Transactions</Cover>
         </h1>
 
-        <p className="text-xl md:text-2xl mb-8 md:mb-12 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="text-lg md:text-2xl mb-8 md:mb-12 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Unlock a seamless, fee-free blockchain experience with WalletX, a
           Chrome extension enabling gasless transactions.
         </p>

@@ -68,20 +68,16 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="  flex flex-col items-center py-0 pb-80 md:pt-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.55] sm:scale-75"
+      className=" relative flex flex-col items-center py-0 pb-80 md:pt-10 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  w-full object-scale-down"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="text-4xl dark:text-white text-neutral-800 sm:text-3xl font-bold mb-20 text-center"
+        className="text-3xl dark:text-white text-neutral-800 sm:text-4xl font-bold mb-20 text-center"
       >
-        {title || (
-          <span>
-            This is how walletX works without gas fees. <br /> No kidding.
-          </span>
-        )}
+        {title}
       </motion.h2>
       {/* Lid */}
       <Lid

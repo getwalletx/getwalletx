@@ -56,23 +56,18 @@ const TestimonialsSection = () => {
   return (
     <div
       id="testimonial"
-      className="w-full bg-white px-5 py-16 md:py-24 text-gray-800 dark:bg-slate-900"
+      className="w-full bg-white px-5 py-10 sm:py-10  text-gray-800 dark:bg-slate-900"
     >
       <div className="w-full max-w-6xl mx-auto">
         <div className="text-center max-w-xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 text-neutral-900 dark:text-white">
-            What people are saying.
-          </h1>
-          <h3 className="text-xl md:text-2xl mb-8 md:mb-12 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </h3>
-          <div className="text-center mb-10">
-            <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
-            <span className="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
-            <span className="inline-block w-40 h-1 rounded-full bg-indigo-500"></span>
-            <span className="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
-            <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
-          </div>
+          <h2 className="text-3xl  sm:text-4xl font-bold mb-12 text-center">
+            <i className="text-base sm:text-lg font-normal">
+              What our User&apos;s have to say about us
+            </i>
+            <br />
+            Testimonials
+          </h2>
+          
         </div>
 
         <div className="-mx-3 md:flex items-start">
