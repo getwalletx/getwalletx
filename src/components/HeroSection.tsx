@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
-import { ArrowDownToLine, Star } from "lucide-react";
+import { ArrowDownToLine, Star, WalletCards } from "lucide-react";
 import { FlipWords } from "./ui/flip-words";
 import UsersReview from "./UsersReview";
 import { Cover } from "./ui/cover";
@@ -9,9 +9,30 @@ import Image from "next/image";
 import PeerList from "../assets/PeerListProductOfTheWeek.png";
 import GG20 from "../assets/GitcoinGrants20.png";
 import ETHOnline23 from "../assets/ETHOnline2023Winner.png";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export default function HeroSection() {
   const words = ["Simple", "Gasless", "Secure", "Gasless", "Fast", "Gasless"];
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleAction = () => {
+    const url = isMobile
+      ? "https://app.getwalletx.com/"
+      : "https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh";
+    window.location.href = url;
+  };
 
   return (
     <section className=" bg-gradient-to-b from-gray-50 to-gray-100  mx-auto px-4 min-h-[90vh] flex items-center justify-center dark:bg-slate-900">
@@ -34,11 +55,20 @@ export default function HeroSection() {
         </p>
 
         <Button
+          onClick={handleAction}
           size="lg"
           className="bg-primary text-white mb-12 md:mb-16 hover:bg-primary/90 dark:bg-blue-600 dark:hover:bg-blue-700 dark:text-white transition-colors px-8 py-6 text-lg relative z-20"
         >
-          <ArrowDownToLine className="mr-3 h-5 w-5 md:h-6 md:w-6" />
-          Download Now on Chrome Store
+          {isMobile ? (
+            <>
+              <WalletCards className="mr-2 h-9 w-9" /> Try WalletX Now
+            </>
+          ) : (
+            <>
+              <ArrowDownToLine className="mr-2 h-7 w-7" /> Download Now on
+              Chrome Store
+            </>
+          )}
         </Button>
 
         <div className="flex flex-col-reverse  items-center gap-10 justify-between sm:flex-row  ">

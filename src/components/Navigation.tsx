@@ -1,9 +1,19 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Menu, X, Home, User, Briefcase, FileText } from "lucide-react";
+import {
+  Menu,
+  X,
+  Home,
+  User,
+  Briefcase,
+  FileText,
+  WalletCards,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import logo from "../assets/WalletXLogoBlack.svg";
+import Image from "next/image";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,6 +49,13 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  const handleAction = () => {
+    const url = isMobile
+      ? "https://app.getwalletx.com/"
+      : "https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh";
+    window.location.href = url;
+  };
+
   const navigationItems = [
     { name: "Get Started", href: "#get-started", icon: Home },
     { name: "Services", href: "#services", icon: Briefcase },
@@ -54,10 +71,10 @@ const Navigation = () => {
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center">
         <div className="w-1/4">
           <Link
-            href="/"
+            href="https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh"
             className="text-xl font-bold text-gray-800 dark:text-white"
           >
-            WalletX
+            <Image src={logo} alt="walletx logo" width={160} height={40} />
           </Link>
         </div>
 
@@ -75,7 +92,10 @@ const Navigation = () => {
         </div>
 
         <div className="w-1/4 flex justify-end items-center space-x-4">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105">
+          <button
+            onClick={handleAction}
+            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 transform hover:scale-105"
+          >
             Download Extension
           </button>
         </div>
@@ -88,10 +108,10 @@ const Navigation = () => {
       <header className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-900 shadow-lg z-50 transition-colors duration-200">
         <nav className="px-4 h-16 flex items-center justify-between">
           <Link
-            href="/"
+            href="https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh"
             className="text-xl font-bold text-gray-800 dark:text-white"
           >
-            WalletX
+            <Image src={logo} alt="walletx logo" width={120} height={40} />
           </Link>
 
           <div className="flex items-center space-x-4">
@@ -140,6 +160,18 @@ const Navigation = () => {
                       </button>
                     );
                   })}
+
+                  <button
+                    key="Download"
+                    onClick={() => handleAction()}
+                    className={`flex flex-col items-center space-y-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-all duration-300 transform hover:-translate-y-1`}
+                    style={{
+                      transitionDelay: `${6 * 50}ms`,
+                    }}
+                  >
+                    <WalletCards size={24} />
+                    <span className="text-sm font-medium">Try WalletX</span>
+                  </button>
                 </div>
                 <div className="flex justify-end">
                   <button
