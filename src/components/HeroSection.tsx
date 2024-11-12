@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 export default function HeroSection() {
-  const words = ["Simple", "Gasless", "Secure", "Gasless", "Fast", "Gasless"];
+  const words = ["Simple", "Secure", "Fast"];
 
   const [isMobile, setIsMobile] = useState(false);
 

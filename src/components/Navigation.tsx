@@ -71,7 +71,7 @@ const Navigation = () => {
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center">
         <div className="w-1/4">
           <Link
-            href="https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh"
+            href="/"
             className="text-xl font-bold text-gray-800 dark:text-white"
           >
             <Image src={logo} alt="walletx logo" width={160} height={40} />
