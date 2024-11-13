@@ -1,47 +1,42 @@
 import TestimonialCard from "./TestimonialCard";
-import avatar from "../assets/test.jpg";
 
 type Testimonial = {
-  avatar: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // avatar: string | any;
   name: string;
   testimonial: string;
 };
 
 const testimonials: Testimonial[] = [
   {
+    name: "Anukuls",
+    testimonial:
+      "WalletX is the best solution for crypto users who want to transact without gas fees.",
+  },
+  {
+    name: "Leo Jhon",
+    testimonial:
+      "Surely WalletX is about to rewrite history of the crypto worlds gas system with its gasless system.",
+  },
+  {
     name: "Nil Jhonson",
-    avatar: `${avatar.src}`,
     testimonial:
       "No more gas fees confusion, just smooth transactions. WalletX is really helping bridge the gap for beginners.",
   },
   {
-    name: "Stevie Tifft",
-    avatar: `${avatar.src}`,
+    name: "Dev Mukherji",
     testimonial:
-      "WalletX is removing one of the biggest headaches in crypto by eliminating gas fees.",
+      "WalletX removes the need for native tokens in DApps. This really opens up Web3 to non-technical users who don’t want to stress about maintaining gas fees!",
   },
   {
     name: "Rifat Ahmed",
-    avatar: `${avatar.src}`,
     testimonial:
       "WalletX really seems to be solving a major issue for both users and developers in web3.",
   },
   {
-    name: "Kenzie Edgar",
-    avatar: `${avatar.src}`,
+    name: "Akash Rana",
     testimonial:
-      "It’s amazing how WalletX removes the need for native tokens in DApps. ",
-  },
-  {
-    name: "Stevie Tifft",
-    avatar: `${avatar.src}`,
-    testimonial:
-      "Now, with WalletX, we can finally transact without worrying making this a big step forward for broader Web3 adoption.",
-  },
-  {
-    name: "Kenzie Edgar",
-    avatar: `${avatar.src}`,
-    testimonial: "I love that WalletX lets you do gasless transactions ",
+      "Tbh, you guys approach to covering gas fees is just what Web3 needs!",
   },
 ];
 
@@ -67,7 +62,6 @@ const TestimonialsSection = () => {
             <br />
             Testimonials
           </h2>
-          
         </div>
 
         <div className="-mx-3 md:flex items-start">
@@ -76,7 +70,7 @@ const TestimonialsSection = () => {
               {column.map((testimonial, index) => (
                 <TestimonialCard
                   key={index}
-                  avatar={testimonial.avatar}
+                  // avatar={testimonial.avatar}
                   name={testimonial.name}
                   testimonial={testimonial.testimonial}
                 />

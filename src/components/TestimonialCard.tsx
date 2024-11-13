@@ -1,13 +1,12 @@
-import Image, { StaticImageData } from "next/image";
+import React from "react";
+import Avatar from "boring-avatars";
 
 type TestimonialCardProps = {
-  avatar: string | StaticImageData;
   name: string;
   testimonial: string;
 };
 
 const TestimonialCard = ({
-  avatar,
   name,
   testimonial,
 }: TestimonialCardProps) => {
@@ -15,13 +14,7 @@ const TestimonialCard = ({
     <div className="w-full mx-auto rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 text-gray-800 dark:text-gray-200 font-light mb-6">
       <div className="w-full flex mb-4 items-center">
         <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600">
-          <Image
-            src={avatar}
-            alt={name}
-            width={100}
-            height={100}
-            className="rounded-full"
-          />
+          <Avatar name={name} />
         </div>
         <div className="flex-grow pl-3">
           <h6 className="font-bold text-sm uppercase text-gray-600 dark:text-gray-300">
