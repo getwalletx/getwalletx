@@ -1,48 +1,73 @@
 import { ArrowDownToLine, Code, PieChart, LucideIcon } from "lucide-react";
-import { FeatureCard } from "./FeatureCard";
+import DisclosureCard from "./DisclosureCard";
+import walletXExtension from "../assets/ourProducts/walletXBrowserExtension.svg";
+import walletXSDK from "../assets/ourProducts/walletXSDK.svg";
+import walletXAdSolution from "../assets/ourProducts/walletXAdSolutions.svg";
+import { StaticImageData } from "next/image";
 
 // New type for service data
 type ServiceData = {
   icon: LucideIcon;
   title: string;
+  subtitle: string;
   description: string;
   cta: string;
+  link: string;
+  image: StaticImageData;
 };
 
 // Array of services
 const services: ServiceData[] = [
   {
     icon: ArrowDownToLine,
-    title: "WalletX Extension",
-    description: "Simplify your Web3 transactions by downloading WalletX. Once installed, you can instantly enjoy gasless blockchain interactions—no additional setup needed!",
-    cta: "Download Now",
+    title: "WalletX Browser Extension",
+    subtitle: "Our Flagship Product 🏁",
+    description:
+      "Thoughtfully designed for the next generation of web3 users. Also available as Telegram Mini App & on Mobile Browser.",
+    cta: "Download WalletX",
+    link: "https://chromewebstore.google.com/detail/walletx-a-gasless-smart-w/mdjjoodeandllhefapdpnffjolechflh",
+    image: walletXExtension,
   },
   {
     icon: Code,
-    title: "WalletX SDK - Coming Soon!",
-    description: "Enable gasless transactions within your decentralized application or Web3 wallet with the upcoming WalletX SDK. Users watch a short ad to cover gas fees, keeping transactions free.",
-    cta: "Join the Waitlist",
+    title: "WalletX SDK",
+    subtitle: "The Invisible Wallet ⛰",
+    description:
+      "Allowing DApps to provide their users with state-of-the-art invisible wallet solution under the hood. Few.",
+    cta: "Building a DApp? Apply now",
+    link: "https://waitlister.me/p/walletx",
+    image: walletXSDK,
   },
   {
     icon: PieChart,
-    title: "Advertiser Dashboard",
-    description: "Reach Web3 users with WalletX's ad network. The advertiser dashboard enables targeted promotions by allowing gas sponsorship in exchange for ad engagement.",
-    cta: "Contact Us",
+    title: "Native Web3 AdTech Solution",
+    subtitle: "Reach Millions of Onchain Users 💻",
+    description:
+      "First-of-its-kind advertisement solution for web3 companies to reach onchain users where they truly are.",
+    cta: "Watch Demo",
+    link: "https://www.youtube.com/watch?v=hYZWZlkx7ds",
+    image: walletXAdSolution,
   },
 ];
 
 export function ServicesSection() {
   return (
-    <section id="services" className="container mx-auto px-4 py-20">
-      <h2 className="text-3xl font-bold mb-12 text-center">Our Services</h2>
-      <div className="grid md:grid-cols-3 gap-8">
+    <section id="services" className="bg-gray-100  mx-auto px-4 py-10">
+      <h2 className="text-3xl  sm:text-4xl font-bold mb-12 text-center">
+        <i className="text-base sm:text-lg font-normal">Get to know all</i>{" "}
+        <br />
+        Our Products
+      </h2>
+      <div className="flex gap-10 justify-center items-center flex-col md:flex-row row-span-2 mb-10 ">
         {services.map((service, index) => (
-          <FeatureCard
+          <DisclosureCard
             key={index}
-            icon={<service.icon className="h-12 w-12 text-primary" />}
+            image={service.image}
             title={service.title}
+            subtitle={service.subtitle}
             description={service.description}
             cta={service.cta}
+            link={service.link}
           />
         ))}
       </div>

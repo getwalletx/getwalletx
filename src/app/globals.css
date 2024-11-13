@@ -6,6 +6,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bg-gradient {
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #010007,
+    #020108,
+    #3016b2,
+    #4722cc,
+    #a954fd
+  );
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -69,4 +81,29 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.hide-cursor {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  z-index: 1000;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
