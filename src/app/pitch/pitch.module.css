@@ -1,0 +1,15 @@
+.iFrame {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  align-items: center;
+}
+
+.iFrame html body .vsc-initialized {
+  display: flex;
+  justify-content: center;
+}
