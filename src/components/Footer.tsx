@@ -54,6 +54,14 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="https://getwalletx.com/pitch"
+                  className="text-sm text-gray-400 hover:text-white"
+                >
+                  Pitch Deck
+                </a>
+              </li>
+              <li>
+                <a
                   href="#testimonial"
                   className="text-sm text-gray-400 hover:text-white"
                 >
