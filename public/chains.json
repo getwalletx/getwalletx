@@ -21,7 +21,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Polygon",
+      "name": "Polygon (Gasless)",
       "chainId": 137,
       "rpc": "https://rpc.ankr.com/polygon/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://polygon-mainnet.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -41,7 +41,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Arbitrum One",
+      "name": "Arbitrum One (Gasless)",
       "chainId": 42161,
       "rpc": "https://rpc.ankr.com/arbitrum/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "",
@@ -61,7 +61,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Arbitrum Nova",
+      "name": "Arbitrum Nova (Gasless)",
       "chainId": 42170,
       "rpc": "https://nova.arbitrum.io/rpc",
       "wssRpc": "",
@@ -81,7 +81,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Polygon ZKEVM",
+      "name": "Polygon ZKEVM (Gasless)",
       "chainId": 1101,
       "rpc": "https://rpc.ankr.com/polygon_zkevm/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/polygon_zkevm/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -101,7 +101,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "BNB Smart Chain",
+      "name": "BNB Smart Chain (Gasless)",
       "chainId": 56,
       "rpc": "https://rpc.ankr.com/bsc/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "",
@@ -121,7 +121,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Optimism",
+      "name": "Optimism (Gasless)",
       "chainId": 10,
       "rpc": "https://rpc.ankr.com/optimism/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://optimism-mainnet.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -141,7 +141,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Avalanche",
+      "name": "Avalanche (Gasless)",
       "chainId": 43114,
       "rpc": "https://avalanche-c-chain-rpc.publicnode.com",
       "wssRpc": "wss://avalanche-mainnet.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -161,7 +161,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Base",
+      "name": "Base (Gasless)",
       "chainId": 8453,
       "rpc": "https://rpc.ankr.com/base/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "",
@@ -201,7 +201,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Linea",
+      "name": "Linea (Gasless)",
       "chainId": 59144,
       "rpc": "https://linea-mainnet.infura.io/v3/956551d130204ce8b7fb6b2a1919ac22",
       "wssRpc": "wss://linea-mainnet.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -221,7 +221,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Mantle",
+      "name": "Mantle (Gasless)",
       "chainId": 5000,
       "rpc": "https://rpc.ankr.com/mantle/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/mantle/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -255,13 +255,13 @@
       "isL2": true,
       "isERC20GasPaymentSupported": false,
       "isEnabled": true,
-      "isGaslessEnabled": true,
+      "isGaslessEnabled": false,
       "explorerUrl": "https://opbnb.bscscan.com",
       "accentColor": "#FE0521",
       "isOnlyEoa": false
     },
     {
-      "name": "Blast",
+      "name": "Blast (Gasless)",
       "chainId": 81457,
       "rpc": "https://rpc.ankr.com/blast/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/blast/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -281,7 +281,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Scroll",
+      "name": "Scroll (Gasless)",
       "chainId": 534352,
       "rpc": "https://rpc.ankr.com/scroll/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/scroll/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -341,7 +341,7 @@
       "isOnlyEoa": true
     },
     {
-      "name": "Taiko",
+      "name": "Taiko (Gasless)",
       "chainId": 167000,
       "rpc": "https://rpc.ankr.com/taiko/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/taiko/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -361,7 +361,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Chiliz",
+      "name": "Chiliz (Gasless)",
       "chainId": 88888,
       "rpc": "https://rpc.ankr.com/chiliz/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/chiliz/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -381,7 +381,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Sei",
+      "name": "Sei (Gasless)",
       "chainId": 1329,
       "rpc": "https://evm-rpc.sei-apis.com",
       "wssRpc": "",
@@ -401,7 +401,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Manta Pacific",
+      "name": "Manta Pacific (Gasless)",
       "chainId": 169,
       "rpc": "https://pacific-rpc.manta.network/http",
       "wssRpc": "",
@@ -421,7 +421,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Core",
+      "name": "Core (Gasless)",
       "chainId": 1116,
       "rpc": "https://rpc.ankr.com/core/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/core/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
@@ -460,7 +460,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "ZetaChain",
+      "name": "ZetaChain (Gasless)",
       "chainId": 7000,
       "rpc": "https://zetachain-evm.blockpi.network/v1/rpc/public",
       "wssRpc": "",
@@ -480,12 +480,12 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Gnosis",
+      "name": "Gnosis (Gasless)",
       "chainId": 100,
       "rpc": "https://rpc.ankr.com/gnosis/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://rpc.ankr.com/gnosis/ws/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "nativeAsset": "xDAI",
-      "chainUri": "https://getwalletx.com/chains/gnosis.svg",
+      "chainUri": "https://getwalletx.com/chains/gnosis.png",
       "coinUri": "https://s2.coinmarketcap.com/static/img/coins/64x64/8635.png",
       "bundlerUrl": "https://bundler.biconomy.io/api/v2/100/we89s.HI7fopYh-dekl-45ic-af80-6877fewdew89",
       "paymasterUrl": "https://paymaster.biconomy.io/api/v1/100/l6k_TlBPY.1b0a15f5-8306-4334-bed5-08bda5e71a56",
@@ -599,29 +599,9 @@
       "accentColor": "#A62BA1",
       "isOnlyEoa": false
     },
-    {
-      "name": "X Layer",
-      "chainId": 196,
-      "rpc": "https://rpc.xlayer.tech",
-      "wssRpc": "",
-      "nativeAsset": "OKB",
-      "chainUri": "https://getwalletx.com/chains/xlayer.png",
-      "coinUri": "https://getwalletx.com/chains/xlayer.png",
-      "bundlerUrl": "https://bundler.biconomy.io/api/v2/196/we89s.HI7fopYh-dekl-45ic-af80-6877fewdew89",
-      "paymasterUrl": "https://paymaster.biconomy.io/api/v1/196/9Xolk3rzL.8fdb548d-e4e3-4a3a-b36d-7e7a19277da3",
-      "paymasterApiKey": "9Xolk3rzL.8fdb548d-e4e3-4a3a-b36d-7e7a19277da3",
-      "isMainnet": true,
-      "isL2": false,
-      "isERC20GasPaymentSupported": true,
-      "isEnabled": true,
-      "isGaslessEnabled": false,
-      "explorerUrl": "https://www.okx.com/web3/explorer/xlayer",
-      "accentColor": "#353535",
-      "isOnlyEoa": false
-    },
 
     {
-      "name": "Ethereum Sepolia",
+      "name": "Ethereum Sepolia (Gasless)",
       "chainId": 11155111,
       "rpc": "https://rpc.ankr.com/eth_sepolia/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://sepolia.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -641,7 +621,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Polygon Amoy",
+      "name": "Polygon Amoy (Gasless)",
       "chainId": 80002,
       "rpc": "https://rpc.ankr.com/polygon_amoy/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://polygon-amoy.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -701,7 +681,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Optimism Sepolia",
+      "name": "Optimism Sepolia (Gasless)",
       "chainId": 11155420,
       "rpc": "https://rpc.ankr.com/optimism_sepolia/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://optimism-sepolia.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -721,7 +701,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Avalanche Fuji",
+      "name": "Avalanche Fuji (Gasless)",
       "chainId": 43113,
       "rpc": "https://rpc.ankr.com/avalanche_fuji-c/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://avalanche-fuji.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -741,7 +721,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Arbitrum Sepolia",
+      "name": "Arbitrum Sepolia (Gasless)",
       "chainId": 421614,
       "rpc": "https://rpc.ankr.com/arbitrum_sepolia/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://arbitrum-sepolia.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -761,7 +741,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Base Sepolia",
+      "name": "Base Sepolia (Gasless)",
       "chainId": 84532,
       "rpc": "https://rpc.ankr.com/base_sepolia/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "",
@@ -781,7 +761,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Blast Sepolia",
+      "name": "Blast Sepolia (Gasless)",
       "chainId": 168587773,
       "rpc": "https://rpc.ankr.com/blast_testnet_sepolia/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
       "wssRpc": "wss://blast-sepolia.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
@@ -901,7 +881,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "5ireChain",
+      "name": "5ireChain (Gasless)",
       "chainId": 997,
       "rpc": "https://rpc-testnet.5ire.network",
       "wssRpc": "",
@@ -941,7 +921,7 @@
       "isOnlyEoa": true
     },
     {
-      "name": "Morph Holesky",
+      "name": "Morph Holesky (Gasless)",
       "chainId": 2810,
       "rpc": "https://rpc-quicknode-holesky.morphl2.io",
       "wssRpc": "",
@@ -981,7 +961,7 @@
       "isOnlyEoa": true
     },
     {
-      "name": "Sei Devnet",
+      "name": "Sei Devnet (Gasless)",
       "chainId": 713715,
       "rpc": "https://evm-rpc.arctic-1.seinetwork.io",
       "wssRpc": "",
@@ -1001,7 +981,7 @@
       "isOnlyEoa": false
     },
     {
-      "name": "Berachain bArtio",
+      "name": "Berachain bArtio (Gasless)",
       "chainId": 80084,
       "rpc": "https://bartio.rpc.berachain.com",
       "wssRpc": "",
