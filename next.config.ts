@@ -39,7 +39,7 @@ const nextConfig: NextConfig = {
         {
           key: "Access-Control-Allow-Origin",
           // Replace with your domain
-          value: "getwalletx.com",
+          value: "*",
         },
         {
           key: "Access-Control-Allow-Methods",
