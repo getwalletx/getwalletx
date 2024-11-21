@@ -15,7 +15,7 @@
       "isL2": false,
       "isERC20GasPaymentSupported": true,
       "isEnabled": true,
-      "isGaslessEnabled": true,
+      "isGaslessEnabled": false,
       "explorerUrl": "https://etherscan.io",
       "accentColor": "#828384",
       "isOnlyEoa": false
