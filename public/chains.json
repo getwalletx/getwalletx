@@ -610,7 +610,7 @@
       "bundlerUrl": "https://bundler.biconomy.io/api/v2/2818/nJPK7B3ru.dd7f7861-190d-41bd-af80-6877f74b8f44",
       "paymasterUrl": "https://paymaster.biconomy.io/api/v1/2818/b43A0REUj.23e690f6-589c-471b-828a-a79b53d14032",
       "paymasterApiKey": "fgFSKacp_.b46537dc-1b1a-4f32-9559-e9bff3085c1b",
-      "isMainnet": false,
+      "isMainnet": true,
       "isL2": true,
       "isERC20GasPaymentSupported": false,
       "isEnabled": true,
