@@ -614,7 +614,7 @@
       "isL2": true,
       "isERC20GasPaymentSupported": false,
       "isEnabled": true,
-      "isGaslessEnabled": false,
+      "isGaslessEnabled": true,
       "explorerUrl": "https://explorer.morphl2.io/",
       "accentColor": "#125A08",
       "isOnlyEoa": false
