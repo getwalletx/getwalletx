@@ -723,7 +723,7 @@
     {
       "name": "Avalanche Fuji",
       "chainId": 43113,
-      "rpc": "https://rpc.ankr.com/avalanche_fuji-c/248c5470b02742b543b7e8732daf515872c25f82c352598b4a154199f39a99b0",
+      "rpc": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
       "wssRpc": "wss://avalanche-fuji.infura.io/ws/v3/956551d130204ce8b7fb6b2a1919ac22",
       "nativeAsset": "AVAX",
       "chainUri": "https://getwalletx.com/chains/avalanche.png",
